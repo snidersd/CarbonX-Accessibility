@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0075)file:///Users/snidersd/Documents/GitHub/carbon-work/dist/accordion-doc.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Accordion Accessibility</title>
   <link rel="stylesheet" href="./Accordion-doc_files/main.css">
   <script src="./Accordion-doc_files/index.js"></script>
@@ -9,19 +12,21 @@
 </head>
 
 <body class="bx--body">
-  
+
   <nav data-tabs="" class="bx--tabs" role="navigation">
     <div class="bx--tabs-trigger" tabindex="0">
       <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
-      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg"
+        width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
         <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
       </svg>
     </div>
     <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
       <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
-        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1" aria-selected="true">Accessibility</a>
+        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1"
+          aria-selected="true">Accessibility</a>
       </li>
-      
+
     </ul>
   </nav>
   <main>
@@ -29,23 +34,28 @@
       <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
         <div class="container">
           <h3>Accordion Accessibility - How it Works</h3>
-          <p>The Accordion Carbon Component provides a vertically stacked layout for web content. The accordion header is a
-            button that is used to expand and collapse each accordion panel. The Tab key and Shift-Tab keys are used to navigate
+          <p>The Accordion Carbon Component provides a vertically stacked layout for web content. The accordion header
+            is a
+            button that is used to expand and collapse each accordion panel. The Tab key and Shift-Tab keys are used to
+            navigate
             through each accordion header and the Enter or Space key expand and collapse each accordion panel.
             WAI-ARIA roles and states are included to ensure the
             component is accessible to people using assistive technologies. The accordion component is assigned the
             ARIA <code>role="presentation"</code> because it is used to layout web content.
             When an accordion header is collapsed the content is hidden so the ARIA state, <code>aria-expanded="false"</code>
             advises users of assistive technologies that the accordion panel is not visible. When the accordion header
-            is expanded the ARIA state changes to <code>aria-expanded="true"</code> and the accordion panel is displayed.
+            is expanded the ARIA state changes to <code>aria-expanded="true"</code> and the accordion panel is
+            displayed.
             Each accordion header contains an ARIA label,
-            <code>aria-label="expand/collapse"</code> and arrow icons used in the accordion header include alternative text.
+            <code>aria-label="expand/collapse"</code> and arrow icons used in the accordion header include alternative
+            text.
           </p>
         </div>
         <div class="container">
           <h3>Accessibility Considerations</h3>
           <ul class="bx--list--ordered">
-            <li class="bx--list__item">Titles within each accordion header should be unique and clearly describe the accordion panel content. This is
+            <li class="bx--list__item">Titles within each accordion header should be unique and clearly describe the
+              accordion panel content. This is
               particularly
               helpful for users of assistive technologies so they have the necessary information to efficiently
               navigate the content
@@ -55,7 +65,7 @@
             <li class="bx--list__item">Although the accordion component passes accessibility testing, content authors
               need to ensure the content that is added to the accordion is accessible. For example, if you add an
               image to the accordion header or panel you need to
-              include alternative text to pass accessibility testing. 
+              include alternative text to pass accessibility testing.
             </li>
           </ul>
         </div>
@@ -68,49 +78,19 @@
             <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html" class="bx--link">IBM
                 Accessibility Checklist - Checkpoint 4.1.2 Name, Role, Value</a> includes the development techniques to
               meet this checkpoint.</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html" class="bx--link">WCAG
+            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html"
+                class="bx--link">WCAG
                 Success Criteria 4.1.2</a> - Understanding Name, Role, Value</li>
           </ul>
         </div>
         <div class="container">
-            <div class="bx--data-table-v2-container" data-table-v2>
-              <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
-              <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-                <thead>
-                  <tr>
-                    <th>
-                      <span class="bx--table-header-label">Automated Test Environment</span>
-                    </th>
-                    <th>
-                      <span class="bx--table-header-label">Results</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <ul class="bx--list--unordered">
-                        <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                        <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                        <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
-                        <li class="bx--list__item">Carbon X</li>
-                      </ul>
-                    </td>
-                    <td>
-                      <p>DAP Test - No violations</li>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        <div class="container">
+          <div class="bx--data-table-v2-container" data-table-v2>
+            <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
             <table class="bx--data-table-v2 bx--data-table-v2--zebra">
               <thead>
                 <tr>
                   <th>
-                    <span class="bx--table-header-label">Environment</span>
+                    <span class="bx--table-header-label">Automated Test Environment</span>
                   </th>
                   <th>
                     <span class="bx--table-header-label">Results</span>
@@ -123,21 +103,13 @@
                     <ul class="bx--list--unordered">
                       <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
                       <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                      <li class="bx--list__item">VoiceOver included with macOS</li>
+                      <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
                       <li class="bx--list__item">Carbon X</li>
                     </ul>
                   </td>
                   <td>
-                      <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                      <ul class="bx--list--ordered">
-                        <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO announces, Expand/collapse, title, collapsed, button, the button's state 
-                          (expanded or collapsed), list, 1 item. You are currently on a button...</li>
-                        <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the accordion panel. VO announces Expand/Collapse title, the button's state 
-                          (expanded or collapsed).</li>
-                        <li class="bx--list__item">With the second or third accordion header expanded, Press Control-Option-Right Arrow. VO announces, the accordion panel content
-                          and the line number in the list.</li> 
-                        <li class="bx--list__item">Press Control-Option-Left Arrow - VO announces reads the accordion header again.</li>
-                      </ul>
+                    <p>DAP Test - No violations</li>
+                    </p>
                   </td>
                 </tr>
               </tbody>
@@ -145,50 +117,98 @@
           </div>
         </div>
         <div class="container">
-          <div class="bx--data-table-v2-container" data-table-v2="">
-            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-              <thead>
-                <tr>
-                  <th>
-                    <span class="bx--table-header-label">Environment</span>
-                  </th>
-                  <th>
-                    <span class="bx--table-header-label">Results</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <ul class="bx--list--unordered">
-                      <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                      <li class="bx--list__item">Safari version 12.0.2</li>
-                      <li class="bx--list__item">VoiceOver included with macOS</li>
-                      <li class="bx--list__item">Carbon X</li>
-                    </ul>
-                  </td>
-                  <td>
-                      <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                      <ul class="bx--list--ordered">
-                        <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO announces, Expand/collapse, title, collapsed, button, the button's state 
-                          (expanded or collapsed), group.</li>
-                        <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the accordion panel. VO announces Expand/Collapse title, the button's state 
-                          (expanded or collapsed).</li>
-                        <li class="bx--list__item">With the second or third accordion header expanded, Press Control-Option-Right Arrow. VO announces, the accordion panel content
-                          and the line number in the list. Your are currently on a text area.</li> 
-                        <li class="bx--list__item">Press Control-Option-Left Arrow - VO announces reads the accordion header again.</li>
-                      </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO
+                      announces, Expand/collapse, title, collapsed, button, the button's state
+                      (expanded or collapsed), list, 1 item. You are currently on a button...</li>
+                    <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the
+                      accordion panel. VO announces Expand/Collapse title, the button's state
+                      (expanded or collapsed).</li>
+                    <li class="bx--list__item">With the second or third accordion header expanded, Press
+                      Control-Option-Right Arrow. VO announces, the accordion panel content
+                      and the line number in the list.</li>
+                    <li class="bx--list__item">Press Control-Option-Left Arrow - VO announces reads the accordion
+                      header again.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
+      </div>
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                    <li class="bx--list__item">Safari version 12.0.2</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO
+                      announces, Expand/collapse, title, collapsed, button, the button's state
+                      (expanded or collapsed), group.</li>
+                    <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the
+                      accordion panel. VO announces Expand/Collapse title, the button's state
+                      (expanded or collapsed).</li>
+                    <li class="bx--list__item">With the second or third accordion header expanded, Press
+                      Control-Option-Right Arrow. VO announces, the accordion panel content
+                      and the line number in the list. Your are currently on a text area.</li>
+                    <li class="bx--list__item">Press Control-Option-Left Arrow - VO announces reads the accordion
+                      header again.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
+    </div>
 
-  </div></main>
+
+    </div>
+  </main>
 
 
-</body></html>
+</body>
+
+</html>
