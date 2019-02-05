@@ -61,8 +61,39 @@
           </ul>
         </div>
         <div class="container">
-          <div class="bx--data-table-v2-container" data-table-v2="">
-            <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
+            <div class="bx--data-table-v2-container" data-table-v2>
+              <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
+              <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="bx--table-header-label">Automated Test Environment</span>
+                    </th>
+                    <th>
+                      <span class="bx--table-header-label">Results</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul class="bx--list--unordered">
+                        <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                        <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                        <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
+                        <li class="bx--list__item">Carbon X</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <p>DAP Test - No violations</li>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <div class="container">
             <table class="bx--data-table-v2 bx--data-table-v2--zebra">
               <thead>
                 <tr>
@@ -80,14 +111,11 @@
                     <ul class="bx--list--unordered">
                       <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
                       <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                      <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
                       <li class="bx--list__item">VoiceOver included with macOS</li>
                       <li class="bx--list__item">Carbon X</li>
                     </ul>
                   </td>
                   <td>
-                    <ul class="bx--list--unordered">
-                      <li class="bx--list__item">DAP Test - No violations</li>
                       <li class="bx--list__item">VoiceOver(VO) Test:</li>
                       <ul class="bx--list--ordered">
                         <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
@@ -97,7 +125,6 @@
                           "Link Breadcrumb #. You are currently on a link to click this link press
                           Control-Option-Space."
                         </li>
-                      </ul>
                     </ul>
                   </td>
                 </tr>
