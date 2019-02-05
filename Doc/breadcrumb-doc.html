@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0036)http://localhost:8080/dist/home.html -->
-<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Breadcrumb Accessibility</title>
   <link rel="stylesheet" href="./Breadcrumb Accessibility_files/main.css">
   <script src="./Breadcrumb Accessibility_files/index.js"></script>
@@ -9,17 +12,19 @@
 </head>
 
 <body class="bx--body" data-gr-c-s-loaded="true">
-  
+
   <nav data-tabs="" class="bx--tabs" role="navigation">
     <div class="bx--tabs-trigger" tabindex="0">
       <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
-      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg"
+        width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
         <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
       </svg>
     </div>
     <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
       <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
-        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1" aria-selected="true">Accessibility</a>
+        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1"
+          aria-selected="true">Accessibility</a>
       </li>
 
     </ul>
@@ -29,10 +34,12 @@
       <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
         <div class="container">
           <h3>Breadcrumb Accessibility - How it Works</h3>
-          <p>The Breadcrumb Carbon Component provides a way for the user to navigate Web content by providing a group of links to the parent Web pages that preceed the current page. The breadcrumb is contained within a
+          <p>The Breadcrumb Carbon Component provides a way for the user to navigate Web content by providing a group
+            of links to the parent Web pages that preceed the current page. The breadcrumb is contained within a
             navigation landmark region. The landmark region contains an ARIA label,
             aria-label="breadcrumb" to advise users of assistive technologies that they are navigating a breadcrumb.
-            CSS is used for the visual separators between each link so they are not represented in the accessibility tree
+            CSS is used for the visual separators between each link so they are not represented in the accessibility
+            tree
             used by screen readers which prevents
             redunant and at times distracting verbosity.
           </p>
@@ -52,53 +59,25 @@
                 WAI-ARIA Authoring Practices Breadcrumb Design Pattern</a> covers the usage of ARIA names, state and
               roles.</li>
             <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/link_purpose.html" class="bx--link">IBM
-                Accessibility Checklist - Checkpoint 2.4.4 Link Purpose (In Context)</a> and <a href="https://www.ibm.com/able/guidelines/ci162/consistent_navigation.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 2.4.4 Link Purpose (In Context)</a> and <a href="https://www.ibm.com/able/guidelines/ci162/consistent_navigation.html"
+                class="bx--link">IBM
                 Accessibility Checklist - Checkpoint 3.2.3 Consistent Navigation</a> includes the development
               techniques to
               meet this checkpoint.</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html" class="bx--link">WCAG Success Criteria 2.4.4</a> - Link Purpose (In Context)</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html" class="bx--link">WCAG Success Criteria 3.2.2</a> - Consistent Navigation</li>
+            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
+                class="bx--link">WCAG Success Criteria 2.4.4</a> - Link Purpose (In Context)</li>
+            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html"
+                class="bx--link">WCAG Success Criteria 3.2.2</a> - Consistent Navigation</li>
           </ul>
         </div>
         <div class="container">
-            <div class="bx--data-table-v2-container" data-table-v2>
-              <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
-              <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-                <thead>
-                  <tr>
-                    <th>
-                      <span class="bx--table-header-label">Automated Test Environment</span>
-                    </th>
-                    <th>
-                      <span class="bx--table-header-label">Results</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <ul class="bx--list--unordered">
-                        <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                        <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                        <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
-                        <li class="bx--list__item">Carbon X</li>
-                      </ul>
-                    </td>
-                    <td>
-                      <p>DAP Test - No violations</li>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        <div class="container">
+          <div class="bx--data-table-v2-container" data-table-v2>
+            <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
             <table class="bx--data-table-v2 bx--data-table-v2--zebra">
               <thead>
                 <tr>
                   <th>
-                    <span class="bx--table-header-label">Environment</span>
+                    <span class="bx--table-header-label">Automated Test Environment</span>
                   </th>
                   <th>
                     <span class="bx--table-header-label">Results</span>
@@ -111,21 +90,13 @@
                     <ul class="bx--list--unordered">
                       <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
                       <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                      <li class="bx--list__item">VoiceOver included with macOS</li>
+                      <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
                       <li class="bx--list__item">Carbon X</li>
                     </ul>
                   </td>
                   <td>
-                      <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                      <ul class="bx--list--ordered">
-                        <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
-                          navigation."</li>
-                        <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
-                          VO announces,
-                          "Link Breadcrumb #. You are currently on a link to click this link press
-                          Control-Option-Space."
-                        </li>
-                    </ul>
+                    <p>DAP Test - No violations</li>
+                    </p>
                   </td>
                 </tr>
               </tbody>
@@ -133,52 +104,293 @@
           </div>
         </div>
         <div class="container">
-          <div class="bx--data-table-v2-container" data-table-v2="">
-            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-              <thead>
-                <tr>
-                  <th>
-                    <span class="bx--table-header-label">Environment</span>
-                  </th>
-                  <th>
-                    <span class="bx--table-header-label">Results</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <ul class="bx--list--unordered">
-                      <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                      <li class="bx--list__item">Safari version 12.0.2</li>
-                      <li class="bx--list__item">VoiceOver included with macOS</li>
-                      <li class="bx--list__item">Carbon X</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                    <ul class="bx--list--ordered">
-                        <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
-                            navigation."</li>
-                          <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
-                            VO announces,
-                            "Link Breadcrumb #. You are currently on a link to click this link press
-                            Control-Option-Space."
-                          </li>
-                      <li class="bx--list__item">Note: In Safari &gt; Preferences &gt; Advanced &gt;
-                        ensure "Press Tab to highlight each item on a webpage" option is checked.</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
+                      navigation."</li>
+                    <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
+                      VO announces,
+                      "Link Breadcrumb #. You are currently on a link to click this link press
+                      Control-Option-Space."
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
+      </div>
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                    <li class="bx--list__item">Safari version 12.0.2</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
+                      navigation."</li>
+                    <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
+                      VO announces,
+                      "Link Breadcrumb #. You are currently on a link to click this link press
+                      Control-Option-Space."
+                    </li>
+                    <li class="bx--list__item">Note: In Safari &gt; Preferences &gt; Advanced &gt;
+                      ensure "Press Tab to highlight each item on a webpage" option is checked.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Microsoft Windows 7</li>
+                    <li class="bx--list__item">Chrome: 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">JAWS 19.1810.64</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">JAWS Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Position focus before breadcrumb component. Tab to the breadcrumb and
+                      JAWS announces,
+                      "Breadcrumb navigation region, Breadcrumb 1 link."</li>
+                    <li class="bx--list__item">Position focus after breadcrumb navigation. Shift-tab to breadcrumb and
+                      JAWS announces,
+                      "Breadcrumb navigation region, Breadcrumb 3 link"
+                    </li>
+                    <li class="bx--list__item">Position focus before breadcrumb component. Press Down Arrow key, JAWS
+                      announces, "Breadcrumb navigation region."
+                    </li>
+                    <li class="bx--list__item">Press Down Arrow key, JAWS
+                      announces, "Link breadcrumb 1."
+                    </li>
+                    <li class="bx--list__item">Position focus after breadcrumb component. Press Up Arrow key, JAWS
+                      announces, "Breadcrumb navigation region end."
+                    </li>
+                    <li class="bx--list__item">Press Up Arrow key, JAWS
+                      announces, "Link breadcrumb 3."
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-  </div></main>
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Microsoft Windows 7</li>
+                    <li class="bx--list__item">Chrome: 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">NVDA 2018.4.1</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">NVDA Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Position focus before breadcrumb component. Tab to the breadcrumb and
+                      NVDA announces,
+                      "Breadcrumb navigation landmark breadcrumb 1 link."</li>
+                    <li class="bx--list__item">Position focus after breadcrumb navigation. Shift-tab to breadcrumb and
+                      NVDA announces,
+                      "Breadcrumb navigation landmark breadcrumb 3 link"
+                    </li>
+                    <li class="bx--list__item">Position focus before breadcrumb component. Press Down Arrow key, NVDA
+                      announces, "Breadcrumb navigation landmark link breadcrumb 1."
+                    </li>
+                    <li class="bx--list__item">Position focus after breadcrumb component. Press Up Arrow key, NVDA
+                      announces, "Breadcrumb navigation landmark link breadcrumb 3."
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Android 9 with Talkback</li>
+                    <li class="bx--list__item">Chrome: 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">Talkback Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Position focus before breadcrumb component.
+                      Swipe Right or press Alt-Right Arrow keys. Talkback announces,
+                      "Breadcrumb 1 link."</li>
+                    <li class="bx--list__item">Position focus after breadcrumb navigation. Swipe left or press Alt+left
+                      arrow
+                      keys. NVDA announces,
+                      "Breadcrumb 3 link"
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bx--data-table-v2-container" data-table-v2="">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">iOS 12.1 with VoiceOver</li>
+                    <li class="bx--list__item">Chrome: 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">Talkback Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item"></li>Turn on quick navigation mode by pressing the left and right arrows
+                    until you hear Quicknav on.</li>
+                    <li class="bx--list__item">Position focus before breadcrumb component.
+                      Swipe Right or press Right Arrow key. VoiceOver announces,
+                      "Breadcrumb 1 link breadcrumb navigation landmark."</li>
+                    <li class="bx--list__item">Position focus after breadcrumb navigation. Swipe left or press Left
+                      arrow
+                      keys. VoiceOver announces,
+                      "Breadcrumb 1 link end breadcrumb navigation."
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
 
 
-<div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
+  <div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1"
+      xmlns="http://www.w3.org/2000/svg" baseProfile="full">
+      <filter id="protanopia">
+        <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0"
+          in="SourceGraphic"></fecolormatrix>
+      </filter>
+      <filter id="deuteranopia">
+        <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0"
+          in="SourceGraphic"></fecolormatrix>
+      </filter>
+      <filter id="tritanopia">
+        <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0"
+          in="SourceGraphic"></fecolormatrix>
+      </filter>
+      <filter id="luminosity">
+        <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0"
+          in="SourceGraphic"></fecolormatrix>
+      </filter>
+    </svg></div>
+</body>
+
+</html>
