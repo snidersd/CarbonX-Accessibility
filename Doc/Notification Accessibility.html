@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:8080/home.html -->
+<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Notification Accessibility</title>
+  <link rel="stylesheet" href="./Notification Accessibility_files/main.css">
+  <script src="./Notification Accessibility_files/index.js"></script>
+  <script src="./Notification Accessibility_files/carbon-components.min.js"></script>
+</head>
+
+<body class="bx--body" data-gr-c-s-loaded="true">
+  
+  <nav data-tabs="" class="bx--tabs" role="navigation">
+    <div class="bx--tabs-trigger" tabindex="0">
+      <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
+      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+        <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
+      </svg>
+    </div>
+    <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
+      <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
+        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1" aria-selected="true">Accessibility</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div style="padding: 1rem;">
+      <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
+        <div class="container">
+          <h3>Notification Accessibility - How it Works</h3>
+          <p>Notification Carbon Components are messages that provide information to a user. The WAI-ARIA role="alert"
+            is used to
+            display a message to the user in a way that attracts the user's attention without interrupting their current
+            task.
+            Therefore, a notification should not affect the keyboard focus. The close button contains an ARIA label,
+            aria-label="close", and the icon has aria-hidden="true" so it is ignored by assistive technologies. The Tab
+            key is used to
+            move focus to the close button within the notification and the Space key or Enter
+            key activate the button to close the notification.
+          </p>
+
+          <div class="container">
+            <h3>Accessibility Considerations</h3>
+            <ul class="bx--list--ordered">
+              <li class="bx--list__item">Avoid designing critical or important alerts that disappear automatically, such
+                as a Toast Notification. An alert that disappears too quickly
+                can lead to failure to meet <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html">
+                  WCAG 2.0 success criterion 2.2.3</a>.</li>
+              <li class="bx--list__item">Avoid frequent interruptions that inhibit usability for people with visual and
+                cognitive disabilities,
+                which also make meeting the requirements of <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html">
+                  WCAG 2.0 success criterion 2.2.4</a> more difficult.</li>
+              <li class="bx--list__item">Ensure the use of color and hidden icons are not used as the only means of
+                conveying the importance
+                of the notification.</li>
+            </ul>
+          </div>
+          <div class="container">
+            <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
+            <ul class="bx--list--unordered">
+              <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#alert" class="bx--link">W3C
+                  W3C WAI-ARIA Authoring Practices Alert Design Pattern</a> covers the usage of ARIA names, state and
+                roles.</li>
+              <li class="bx--list__item"><a href="https://www.w3.org/WAI/tutorials/forms/notifications/" class="bx--link">W3C
+                  W3C Web Accessibility Tutorial - User Notifications</a> provides a tutorial on notification
+                accessibility.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/error_id.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 3.3.1 Error Identification</a> includes the development
+                techniques to
+                meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/labels_or_instructions.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 3.3.2 Labels and Instructions</a> includes the development
+                techniques to
+                meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/error_suggestion.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 3.3.3 Error Suggestion</a> includes the development techniques
+                to
+                meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html" class="bx--link">WCAG
+                  Success Criteria 3.3.1</a> - Error Identification</li>
+              <li class="bx--list__item"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html" class="bx--link">WCAG
+                  Success Criteria 3.3.2</a> - Instructions and Labels</li>
+              <li class="bx--list__item"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html" class="bx--link">WCAG
+                  Success Criteria 3.3.3</a> - Error Suggestion</li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="bx--data-table-v2-container" data-table-v2="">
+              <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
+              <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="bx--table-header-label">Automated Test Environment</span>
+                    </th>
+                    <th>
+                      <span class="bx--table-header-label">Results</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul class="bx--list--unordered">
+                        <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                        <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                        <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
+                        <li class="bx--list__item">Carbon X</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <p>DAP Test - No violations
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="container">
+            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+              <thead>
+                <tr>
+                  <th>
+                    <span class="bx--table-header-label">Environment</span>
+                  </th>
+                  <th>
+                    <span class="bx--table-header-label">Results</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul class="bx--list--unordered">
+                      <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                      <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                      <li class="bx--list__item">Carbon X</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                    <ul class="bx--list--ordered">
+                      <li class="bx--list__item">Press Control-Option-Shift keys to enter the Web content.</li>
+                      <li class="bx--list__item">Press the Tab key. VO announces the notification text and the Close
+                        button. </li>
+                      <li class="bx--list__item">Press the Space key or Enter key to close the notification.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="container">
+            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
+                    <li class="bx--list__item">Safari version 12.0.2</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver(VO) Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">Press Control-Option-Shift keys to enter the Web content.</li>
+                    <li class="bx--list__item">Press the Tab key. VO announces the notification text and the Close
+                      button. </li>
+                    <li class="bx--list__item">Press the Space key or Enter key to close the notification.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+
+        </div>
+  </div></div></main>
+
+
+<div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
