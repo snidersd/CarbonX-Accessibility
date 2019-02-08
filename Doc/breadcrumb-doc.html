@@ -209,24 +209,15 @@
                 <td>
                   <li class="bx--list__item">JAWS Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">Position focus before breadcrumb component. Tab to the breadcrumb and
-                      JAWS announces,
-                      "Breadcrumb navigation region, Breadcrumb 1 link."</li>
-                    <li class="bx--list__item">Position focus after breadcrumb navigation. Shift-tab to breadcrumb and
-                      JAWS announces,
-                      "Breadcrumb navigation region, Breadcrumb 3 link"
+                    <li class="bx--list__item">Navigate the list with the Up and Down Arrow keys.</li>
+                    <li class="bx--list__item">JAWS announces the beginning of the list, number of items 
+                      in the list, nesting level, content of the list item and end of the list. 
                     </li>
-                    <li class="bx--list__item">Position focus before breadcrumb component. Press Down Arrow key, JAWS
-                      announces, "Breadcrumb navigation region."
+                    <li class="bx--list__item">
+                        Information and the list item content are announced on two separate lines on the virtual viewer.
                     </li>
-                    <li class="bx--list__item">Press Down Arrow key, JAWS
-                      announces, "Link breadcrumb 1."
-                    </li>
-                    <li class="bx--list__item">Position focus after breadcrumb component. Press Up Arrow key, JAWS
-                      announces, "Breadcrumb navigation region end."
-                    </li>
-                    <li class="bx--list__item">Press Up Arrow key, JAWS
-                      announces, "Link breadcrumb 3."
+                    <li class="bx--list__item">
+                        Bullets and item numbers are also placed on a separate line. 
                     </li>
                   </ul>
                 </td>
@@ -262,19 +253,14 @@
                 <td>
                   <li class="bx--list__item">NVDA Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">Position focus before breadcrumb component. Tab to the breadcrumb and
-                      NVDA announces,
-                      "Breadcrumb navigation landmark breadcrumb 1 link."</li>
-                    <li class="bx--list__item">Position focus after breadcrumb navigation. Shift-tab to breadcrumb and
-                      NVDA announces,
-                      "Breadcrumb navigation landmark breadcrumb 3 link"
-                    </li>
-                    <li class="bx--list__item">Position focus before breadcrumb component. Press Down Arrow key, NVDA
-                      announces, "Breadcrumb navigation landmark link breadcrumb 1."
-                    </li>
-                    <li class="bx--list__item">Position focus after breadcrumb component. Press Up Arrow key, NVDA
-                      announces, "Breadcrumb navigation landmark link breadcrumb 3."
-                    </li>
+                      <li class="bx--list__item">Navigate the list with the Up and Down Arrow keys.</li>
+                      <li class="bx--list__item">NVDA announces the beginning of the list, number of items 
+                        in the list, nesting level, content of the list item. 
+                      </li>
+                      <li class="bx--list__item">End of list, when exiting the list from the top or bottom.</li>
+                      <li class="bx--list__item">
+                          List item parameters are announced together with the list item content.
+                      </li>
                   </ul>
                 </td>
               </tr>
@@ -308,14 +294,17 @@
                 <td>
                   <li class="bx--list__item">Talkback Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">Position focus before breadcrumb component.
-                      Swipe Right or press Alt-Right Arrow keys. Talkback announces,
-                      "Breadcrumb 1 link."</li>
-                    <li class="bx--list__item">Position focus after breadcrumb navigation. Swipe left or press Alt+left
-                      arrow
-                      keys. NVDA announces,
-                      "Breadcrumb 3 link"
-                    </li>
+                      <li class="bx--list__item">Navigate the list by swiping left or right or 
+                        pressing the Alt key with the Left or Right Arrow key.</li>
+                      <li class="bx--list__item">Talkback announces, "in list" when entering the list and "out of list" 
+                        when exiting the list.
+                      </li>
+                      <li class="bx--list__item">Talkback also announces entering and exiting the nested lists, the number of 
+                        list items, nesting level, and contnt of the list item. 
+                      </li>
+                      <li class="bx--list__item">
+                          Bullets and numbers are announced separately from the list item content.
+                      </li>
                   </ul>
                 </td>
               </tr>
@@ -347,18 +336,20 @@
                   </ul>
                 </td>
                 <td>
-                  <li class="bx--list__item">Talkback Test:</li>
+                  <li class="bx--list__item">VoiceOver Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item"></li>Turn on quick navigation mode by pressing the left and right arrows
-                    until you hear Quicknav on.</li>
-                    <li class="bx--list__item">Position focus before breadcrumb component.
-                      Swipe Right or press Right Arrow key. VoiceOver announces,
-                      "Breadcrumb 1 link breadcrumb navigation landmark."</li>
-                    <li class="bx--list__item">Position focus after breadcrumb navigation. Swipe left or press Left
-                      arrow
-                      keys. VoiceOver announces,
-                      "Breadcrumb 1 link end breadcrumb navigation."
-                    </li>
+                      <li class="bx--list__item">Navigate list items by swiping left or right, or using the Left 
+                        and Right Arrow keys on the keyboard when the quick navigation is turned on.</li>
+                      <li class="bx--list__item">VoiceOver announces the beginning of the list, nesting level, content of 
+                        the list item, the end of the list. 
+                      </li>
+                      <li class="bx--list__item">When navigating the list, "list start" is announced on the top of the 
+                        list, and "list end" is announced at the end of the list, regardless of the direction we are 
+                        approaching from.</li>
+                      <li class="bx--list__item">
+                          Information about the list, bullets and numbers and list item contents are pronounced 
+                          separately, we have to navigate through these one by one.
+                      </li>
                   </ul>
                 </td>
               </tr>
