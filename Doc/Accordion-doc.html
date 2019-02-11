@@ -16,15 +16,15 @@
   <nav data-tabs="" class="bx--tabs" role="navigation">
     <div class="bx--tabs-trigger" tabindex="0">
       <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
-      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg"
-        width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;"
+        xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
         <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
       </svg>
     </div>
     <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
       <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
-        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1"
-          aria-selected="true">Accessibility</a>
+        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab"
+          aria-controls="tab-panel-1" aria-selected="true">Accessibility</a>
       </li>
 
     </ul>
@@ -42,7 +42,8 @@
             WAI-ARIA roles and states are included to ensure the
             component is accessible to people using assistive technologies. The accordion component is assigned the
             ARIA <code>role="presentation"</code> because it is used to layout web content.
-            When an accordion header is collapsed the content is hidden so the ARIA state, <code>aria-expanded="false"</code>
+            When an accordion header is collapsed the content is hidden so the ARIA state,
+            <code>aria-expanded="false"</code>
             advises users of assistive technologies that the accordion panel is not visible. When the accordion header
             is expanded the ARIA state changes to <code>aria-expanded="true"</code> and the accordion panel is
             displayed.
@@ -72,10 +73,12 @@
         <div class="container">
           <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
           <ul class="bx--list--unordered">
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/#accordion" class="bx--link">W3C
+            <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/#accordion"
+                class="bx--link">W3C
                 WAI-ARIA Authoring Practices Accordion Design Pattern</a> covers the usage of ARIA names, state and
               roles, as well as the expected keyboard intractions.</li>
-            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html" class="bx--link">IBM
+            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html"
+                class="bx--link">IBM
                 Accessibility Checklist - Checkpoint 4.1.2 Name, Role, Value</a> includes the development techniques to
               meet this checkpoint.</li>
             <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html"
@@ -202,9 +205,168 @@
         </div>
       </div>
 
-    </div>
+        <div class="container">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Windows 7</li>
+                    <li class="bx--list__item">JAWS 19.1810.64</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">JAWS Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. JAWS
+                      announces, title, and expand/collapse status.</li>
+                    <li class="bx--list__item">Press the Enter or Space key on the title. JAWS announces Expand or
+                      Collapsed.</li>
+                    <li class="bx--list__item">Navigate the text using the Up and Down Arrow keys, when JAWS
+                      read the headers and associated text if expanded in a linear order.</li>
+                    <li class="bx--list__item">Please note that sometimes it takes a second for the text to update
+                      after a title is expanded. When pressing the down arrow key immediately after JAWS announces
+                      "Expanded", JAWS jumps past the text and reads the next title.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+        <div class="container">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Windows 7</li>
+                    <li class="bx--list__item">NVDA 2018.4.1</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">NVDA Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. NVDA
+                      announces, title, and expand/collapse status.</li>
+                    <li class="bx--list__item">Press the Enter or Space key on the title. NVDA announces Expand or
+                      Collapsed.</li>
+                    <li class="bx--list__item">Navigate the text using the Up and Down Arrow keys, when JAWS
+                      read the headers and associated text if expanded in a linear order.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+        <div class="container">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">iOS 12.1 with VoiceOver</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">VoiceOver Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">To navigate the accordion, swipe left or right, or use the
+                      Left or Right Arrow keys when quick nav mode is on. On each header,
+                      VoiceOver announces the header, and expanded/collapsed status.</li>
+                    <li class="bx--list__item">To expand or collapse the accordion, doubletap on the header,
+                      or press Control+Option+Space. VoiceOver announces, exapnaded or collapses.</li>
+                    <li>In some cases, VoiceOver also reads out the entire header, it seems to happen
+                      randomly, possibly have to do with the speed of the phone.</li>
+                    <li class="bx--list__item">Navigate the text by swiping left or right, or by
+                      pressing the Left or Right Arrow keys when quick navigation mode is on.
+                      After each title, when moving to the left or right, VoiceOver will read the text if it is
+                      expanded.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="container">
+          <table class="bx--data-table-v2 bx--data-table-v2--zebra">
+            <thead>
+              <tr>
+                <th>
+                  <span class="bx--table-header-label">Environment</span>
+                </th>
+                <th>
+                  <span class="bx--table-header-label">Results</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul class="bx--list--unordered">
+                    <li class="bx--list__item">Android 9 with Talkback</li>
+                    <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
+                    <li class="bx--list__item">Carbon X</li>
+                  </ul>
+                </td>
+                <td>
+                  <li class="bx--list__item">Talkback Test:</li>
+                  <ul class="bx--list--ordered">
+                    <li class="bx--list__item">To navigate the accordion, swipe left or right, or use
+                      the Alt+Left or Right Arrow keys. On each header, TalkBack announces the header, and
+                      expanded/collapsed status.</li>
+                    <li class="bx--list__item">To expand or collapse the accordion, doubletap on the header,
+                      or press Alt+Enter. Talkback announces, exapnaded or collapses.</li>
+                    <li class="bx--list__item">Navigate the text by swiping left or right, or by
+                      pressing the Left or Right Arrow keys.
+                      After each title, when moving to the left or right, Talkback will read the text if it is
+                      expanded.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
     </div>
   </main>
 
