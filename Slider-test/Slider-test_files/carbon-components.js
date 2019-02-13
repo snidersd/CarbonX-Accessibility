@@ -9501,7 +9501,8 @@ var CarbonComponents = function (exports) {
               // decreasing
               38: 1,
               // increasing
-              39: 1 // increasing
+              39: 1
+              // increasing
 
             }[evt.which];
 
