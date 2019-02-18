@@ -2,194 +2,51 @@
 <!-- saved from url=(0031)http://localhost:8080/home.html -->
 <html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>Toggle Accessibility</title>
+  <title>Toggle Component Accessibility</title>
   <link rel="stylesheet" href="./Toggle-test_files/main.css">
   <script src="./Toggle-test_files/index.js"></script>
-  <script src="./Toggle-test_files/carbon-components.min.js"></script>
+  <script src="./Toggle-test_files/carbon-components.js"></script>
 </head>
 
-<body class="bx--body" data-gr-c-s-loaded="true">
-  
-  <nav data-tabs="" class="bx--tabs" role="navigation">
-    <div class="bx--tabs-trigger" tabindex="0">
-      <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
-      <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
-        <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
-      </svg>
-    </div>
-    <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
-      <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
-        <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1" aria-selected="true">Accessibility</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <div style="padding: 1rem;">
-      <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
-        <div class="container">
-          <h3>Toggle Accessibility - How it Works</h3>
-          <p>The Toggle Component is a checkbox that is designed as a toggle switch
-            with a position of either on or off. The Tab key is used to move focus to each toggle, and a toggle component identified as
-            disabled
-            is ignored in the tab order. The Space key is used to turn the toggle on and off. When the toggle
-            is in the on position,
-            the ARIA state is aria-checked="true" and the label is set to "On". When the toggle is in the off position, the ARIA state is 
-            aria-checked="false" and the label is set to "Off". 
-          </p>
 
-          <div class="container">
-            <h3>Accessibility Considerations</h3>
-            <ul class="bx--list--ordered">
-              <li class="bx--list__item">Labels should be clear and concise.</li>
-              <li class="bx--list__item">Users should be warned if selecting a toggle component will cause a change in context.
-              </li>
-            </ul>
-          </div>
-          <div class="container">
-            <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
-            <ul class="bx--list--unordered">
-              <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-1/checkbox-1.html" class="bx--link">W3C
-                  WAI-ARIA Authoring Practices Checkbox Design Pattern</a> covers the usage of ARIA names, state and
-                roles, as well as the expected keyboard intractions.</li>
-              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/info_and_relationships.html" class="bx--link">IBM
-                  Accessibility Checklist - Checkpoint 1.3.1 Information and Relationships</a> includes the development
-                techniques to
-                meet this checkpoint.</li>
-              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/labels_or_instructions.html" class="bx--link">IBM
-                  Accessibility Checklist - Checkpoint 3.3.2 Labels and Instructions</a> includes the development
-                techniques
-                to
-                meet this checkpoint.</li>
-              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html" class="bx--link">IBM
-                  Accessibility Checklist - Checkpoint 4.1.2 Name, Role, Value</a> includes the development techniques
-                to meet this checkpoint.</li>
-              <li class="bx--list__item"><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/content-structure-separation-programmatic.html" class="bx--link">WCAG
-                  Success Criteria 1.3.1</a> - Information and Relationships</li>
-              <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html" class="bx--link">WCAG
-                  Success Criteria 3.3.2</a> - Labels and Instructions</li>
-              <li class="bx--list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value" class="bx--link">WCAG
-                  Success Criteria 4.2.1</a> - Name, Role, Value</li>
-            </ul>
-          </div>
-          <div class="container">
-            <div class="bx--data-table-v2-container" data-table-v2="">
-              <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
-              <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-                <thead>
-                  <tr>
-                    <th>
-                      <span class="bx--table-header-label">Automated Test Environment</span>
-                    </th>
-                    <th>
-                      <span class="bx--table-header-label">Results</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <ul class="bx--list--unordered">
-                        <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                        <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                        <li class="bx--list__item">Dynamic Assessment Plugin (DAP) version 1.7.0.1</li>
-                        <li class="bx--list__item">Carbon X</li>
-                      </ul>
-                    </td>
-                    <td>
-                      <p>DAP Test - No violations (Note: 1 known DAP defect may result in a false positive violation for disabled checkboxes.)
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="container">
-            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-              <thead>
-                <tr>
-                  <th>
-                    <span class="bx--table-header-label">Environment</span>
-                  </th>
-                  <th>
-                    <span class="bx--table-header-label">Results</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <ul class="bx--list--unordered">
-                      <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                      <li class="bx--list__item">Chrome version 71.0.3578.98 (Official Build) (64-bit)</li>
-                      <li class="bx--list__item">Carbon X</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                    <ul class="bx--list--ordered">
-                      <li class="bx--list__item">Press the Tab key to navigate to the first toggle component. VO announces the label as Off,
-                        the state as unchecked, and that it is a checkbox. 
-                      </li>
-                      <li class="bx--list__item">Press the Space key to change the state of the toggle component On and Off.</li>
-                      <li class="bx--list__item">Press the Tab key to navigate to the labeled toggle component.  VO announces the label as Off,
-                        the state as unchecked, that it is a checkbox and the label.
-                      </li>
-                      <li class="bx--list__item">Press the Tab key and the disabled toogle component is skipped.</li>
-                      <li class="bx--list__item">Control-Option-Left Arrow key back to the disabled toggle component. VO announces that it is a disabled
-                        checkbox, dimmed unchecked checkbox.
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        <div class="container">
-          <div class="bx--data-table-v2-container" data-table-v2="">
-            <table class="bx--data-table-v2 bx--data-table-v2--zebra">
-              <thead>
-                <tr>
-                  <th>
-                    <span class="bx--table-header-label">Environment</span>
-                  </th>
-                  <th>
-                    <span class="bx--table-header-label">Results</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <ul class="bx--list--unordered">
-                      <li class="bx--list__item">macOS Mojave version 10.14.2 with VoiceOver</li>
-                      <li class="bx--list__item">Safari version 12.0.2</li>
-                      <li class="bx--list__item">Carbon X</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <li class="bx--list__item">VoiceOver(VO) Test:</li>
-                    <ul class="bx--list--ordered">
-                      <li class="bx--list__item">Press the Tab key to navigate to the first toggle component. VO announces the label as Off Off,
-                        the state as unchecked, and that it is a checkbox. 
-                      </li>
-                      <li class="bx--list__item">Press the Space key to change the state of the toggle component On and Off.</li>
-                      <li class="bx--list__item">Press the Tab key to navigate to the labeled toggle component.  VO announces the label as Off Off,
-                        the state as unchecked, that it is a checkbox and the label.
-                      </li>
-                      <li class="bx--list__item">Press the Tab key and the disabled toogle component is skipped.</li>
-                      <li class="bx--list__item">Control-Option-Left Arrow key back to the disabled toggle component. VO announces that it is a off off,
-                         dimmed unchecked checkbox.
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+
+<body class="bx--body" data-gr-c-s-loaded="true">
+  <main>
+    <h1>Toggle Carbon Components</h1>
+    <div class="container">
+    <!--component start-->
+    <div class="bx--form-item">
+        <input class="bx--toggle" id="toggle1" type="checkbox">
+        <label class="bx--toggle__label" for="toggle1">
+          <span class="bx--toggle__text--left">Off</span>
+          <span class="bx--toggle__appearance"></span>
+          <span class="bx--toggle__text--right">On</span>
+        </label>
       </div>
-  </div></div></main>
+      
+      <fieldset class="bx--fieldset">
+        <legend class="bx--label">Toggle w/ Label</legend>
+        <div class="bx--form-item">
+          <input class="bx--toggle" id="toggle2" type="checkbox">
+          <label class="bx--toggle__label" for="toggle2">
+          <span class="bx--toggle__text--left">Off</span>
+          <span class="bx--toggle__appearance"></span>
+          <span class="bx--toggle__text--right">On</span>
+        </label>
+        </div>
+      </fieldset>
+      
+      <div class="bx--form-item">
+        <input class="bx--toggle" id="toggle3" type="checkbox" disabled="">
+        <label class="bx--toggle__label" for="toggle3">
+          <span class="bx--toggle__text--left">Off</span>
+          <span class="bx--toggle__appearance"></span>
+          <span class="bx--toggle__text--right">On</span>
+        </label>
+      </div>
+    <!--component end-->
+  </div>
+  </main>
 
 
 <div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
