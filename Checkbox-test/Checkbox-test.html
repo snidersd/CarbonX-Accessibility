@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:8080/home.html -->
+<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Checkbox Component Accessibility</title>
+  <link rel="stylesheet" href="./Checkbox-test_files/main.css">
+  <script src="./Checkbox-test_files/index.js"></script>
+  <script src="./Checkbox-test_files/carbon-components.js"></script>
+</head>
+
+
+
+<body class="bx--body" data-gr-c-s-loaded="true">
+  <main>
+    <h1>Checkbox Carbon Components</h1>
+    <div class="container">
+    <!--component start-->
+    <fieldset class="bx--fieldset">
+      <legend class="bx--label">Checkbox (input + label)</legend>
+      <!-- input + label -->
+      <div class="bx--form-item bx--checkbox-wrapper">
+        <input id="bx--checkbox-new" class="bx--checkbox" type="checkbox" value="new" name="checkbox" aria-checked="true" checked="">
+        <label for="bx--checkbox-new" class="bx--checkbox-label">Checkbox</label>
+      </div>
+      <!-- input + label indeterminate -->
+      <div class="bx--form-item bx--checkbox-wrapper">
+        <input id="bx--checkbox-ind" class="bx--checkbox" type="checkbox" value="new" name="checkbox" aria-checked="mixed">
+        <label for="bx--checkbox-ind" class="bx--checkbox-label">Indeterminate checkbox</label>
+      </div>
+      <!-- input + label disabled -->
+      <div class="bx--form-item bx--checkbox-wrapper">
+        <input id="bx--checkbox-disabled" class="bx--checkbox" type="checkbox" value="new" name="checkbox" disabled="">
+        <label for="bx--checkbox-disabled" class="bx--checkbox-label">Disabled checkbox</label>
+      </div>
+    </fieldset>
+    <fieldset class="bx--fieldset">
+      <legend class="bx--label">Checkbox (input &gt; label)</legend>
+        <!-- label > input -->
+        <div class="bx--form-item bx--checkbox-wrapper">
+          <label for="bx--checkbox-new2" class="bx--checkbox-label" data-contained-checkbox-state="true" data-contained-checkbox-disabled="false">
+            <input id="bx--checkbox-new2" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox" checked="" aria-checked="true">
+            Checkbox
+          </label>
+        </div>
+        <!-- label > input -->
+        <div class="bx--form-item bx--checkbox-wrapper">
+          <label for="bx--checkbox-ind2" class="bx--checkbox-label" data-contained-checkbox-state="mixed" data-contained-checkbox-disabled="false">
+            <input id="bx--checkbox-ind2" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox" aria-checked="mixed">
+            Indeterminate checkbox
+          </label>
+        </div>
+        <!-- label > input -->
+        <div class="bx--form-item bx--checkbox-wrapper">
+          <label for="bx--checkbox-disabled2" class="bx--checkbox-label" data-contained-checkbox-disabled="true">
+            <input id="bx--checkbox-disabled2" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox" disabled="">
+            Disabled checkbox
+          </label>
+        </div>
+    </fieldset>
+    <!--component end-->
+  </div>
+  </main>
+
+
+<div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
