@@ -17,3 +17,6 @@
 ## Notifications - Needs additional work
 [Notification Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Notification-test/Notification%20Accessibility.html) /
 [Notification Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Notification%20Accessibility.html)
+## Toggle - Needs Tom's test results
+[Toggle Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Toggle-test/Toggle-test.html) /
+[Toggle Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Toggle-doc.html)
