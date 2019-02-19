@@ -5,7 +5,7 @@
 ## Breadcrumb - Ready
 [Breadcrumb Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Breadcrumb-test/Breadcrumb%20Accessibility.html)  /
 [Breadcrumb Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/breadcrumb-doc.html)
-## Checkbox - Needs Tom's test results
+## Checkbox - Ready
 [Checkbox Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Checkbox-test/Checkbox-test.html) /
 [Checkbox Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Checkbox-doc.html)
 ## Link - Ready
@@ -17,6 +17,6 @@
 ## Notifications - Needs additional work
 [Notification Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Notification-test/Notification%20Accessibility.html) /
 [Notification Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Notification%20Accessibility.html)
-## Toggle - Needs Tom's test results
+## Toggle - Ready
 [Toggle Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Toggle-test/Toggle-test.html) /
 [Toggle Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Toggle-doc.html)
