@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8080/dist/home.html -->
+<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Tabs Component Accessibility</title>
+  <link rel="stylesheet" href="./Tabs-test_files/main.css">
+  <script src="./Tabs-test_files/index.js"></script>
+  <script src="./Tabs-test_files/carbon-components.js"></script>
+</head>
+
+
+
+<body class="bx--body" data-gr-c-s-loaded="true">
+  <main>
+    <h1>Tabs Carbon Components</h1>
+    <div class="container">
+
+<!--component start--> 
+<nav data-tabs="" class="bx--tabs" role="navigation">
+    <div class="bx--tabs-trigger" tabindex="0">
+      <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1">
+          Tab label 1
+        </a>
+        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
+    </div>
+    <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist">
+        <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1" role="presentation">
+          <a tabindex="0" id="tab-link-1" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1" aria-selected="true">Tab label 1</a>
+        </li>
+        <li class="bx--tabs__nav-item" data-target=".tab-2" role="presentation">
+          <a tabindex="0" id="tab-link-2" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-2">Tab label 2</a>
+        </li>
+        <li class="bx--tabs__nav-item" data-target=".tab-3" role="presentation">
+          <a tabindex="0" id="tab-link-3" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-3">Tab label 3</a>
+        </li>
+        <li class="bx--tabs__nav-item" data-target=".tab-4" role="presentation" disabled="">
+          <a tabindex="0" id="tab-link-4" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-4">Tab label 4</a>
+        </li>
+    </ul>
+  </nav>
+  <!-- The markup below is for demonstration purposes only -->
+  <div style="padding: 1rem;">
+      <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
+        <p>Content for first tab goes here.</p>
+      </div>
+      <div id="tab-panel-2" class="tab-2" role="tabpanel" aria-labelledby="tab-link-2" aria-hidden="true" hidden="">
+        <p>Content for second tab goes here.</p>
+      </div>
+      <div id="tab-panel-3" class="tab-3" role="tabpanel" aria-labelledby="tab-link-3" aria-hidden="true" hidden="">
+        <p>Content for third tab goes here.</p>
+      </div>
+      <div id="tab-panel-4" class="tab-4" role="tabpanel" aria-labelledby="tab-link-4" aria-hidden="true" hidden="">
+        <p>Content for fourth tab goes here.</p>
+      </div>
+  </div>
+    <!--component end--> 
+  </div></main>
+
+
+<div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
