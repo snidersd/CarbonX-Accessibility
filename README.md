@@ -8,6 +8,8 @@
 ## Checkbox - Ready
 [Checkbox Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Checkbox-test/Checkbox-test.html) /
 [Checkbox Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Checkbox-doc.html)
+## Code Snippet - Needs additional work
+[Code Snippet Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/CodeSnippet-test/Code%20Snippet%20Component%20Accessibility.html)
 ## Link - Ready
 [Link Test](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Link-test/Link%20Accessibility.html) /
 [Link Doc](https://htmlpreview.github.io/?https://github.com/snidersd/CarbonX-Accessibility/blob/master/Doc/Link-doc.html)
