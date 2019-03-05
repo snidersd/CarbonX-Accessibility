@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8080/dist/home.html -->
+<html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Code Snippet Component Accessibility</title>
+  <link rel="stylesheet" href="./Code Snippet Component Accessibility_files/main.css">
+  <script src="./Code Snippet Component Accessibility_files/index.js"></script>
+  <script src="./Code Snippet Component Accessibility_files/carbon-components.js"></script>
+</head>
+
+
+
+<body class="bx--body" data-gr-c-s-loaded="true">
+  <main>
+    <h1>Code Snippet Carbon Components</h1>
+    <div class="container">
+
+      <h2>Single line Code Snippet</h2>
+<!--component start--> 
+<!-- 
+  Copyright IBM Corp. 2016, 2018
+
+  This source code is licensed under the Apache-2.0 license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+
+<div class="bx--snippet bx--snippet--single"> <div class="bx--snippet-container" aria-label="Code Snippet Text">
+  <pre><code>@mixin grid-container {
+    width: 100%;
+    padding-right: padding(mobile);
+    padding-left: padding(mobile);
+
+    @include breakpoint(bp--xs--major) {
+      padding-right: padding(xs);
+      padding-left: padding(xs);
+    }
+  }
+
+  $z-indexes: (
+    modal : 9000,
+    overlay : 8000,
+    dropdown : 7000,
+    header : 6000,
+    footer : 5000,
+    hidden : - 1,
+    overflowHidden: - 1,
+    floating: 10000
+  );</code>
+    </pre>
+</div>
+<button data-copy-btn="" class="bx--snippet-button" type="button" aria-label="Copy" tabindex="0">
+  <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--snippet__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 5v9H5V5h9m0-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"></path><path d="M2 9H1V2a1 1 0 0 1 1-1h7v1H2z"></path></svg>
+  <div class="bx--btn--copy__feedback" role="alert" data-feedback="Copied!"></div>
+</button>
+</div>
+    <!--component end--> 
+
+    <br> 
+<h2>Multi-line Code Snippet</h2>
+    <!--component start-->
+    <!-- 
+  Copyright IBM Corp. 2016, 2018
+
+  This source code is licensed under the Apache-2.0 license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+
+<div class="bx--snippet bx--snippet--multi bx--snippet--expand" data-code-snippet=""> <div class="bx--snippet-container" aria-label="Code Snippet Text">
+<pre><code>@mixin grid-container {
+  width: 100%;
+  padding-right: padding(mobile);
+  padding-left: padding(mobile);
+
+  @include breakpoint(bp--xs--major) {
+    padding-right: padding(xs);
+    padding-left: padding(xs);
+  }
+}
+
+$z-indexes: (
+  modal : 9000,
+  overlay : 8000,
+  dropdown : 7000,
+  header : 6000,
+  footer : 5000,
+  hidden : - 1,
+  overflowHidden: - 1,
+  floating: 10000
+);</code>
+  </pre>
+</div>
+<button data-copy-btn="" class="bx--snippet-button" type="button" aria-label="Copy" tabindex="0">
+<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--snippet__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 5v9H5V5h9m0-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"></path><path d="M2 9H1V2a1 1 0 0 1 1-1h7v1H2z"></path></svg>
+<div class="bx--btn--copy__feedback" role="alert" data-feedback="Copied!"></div>
+</button>
+<button class="bx--btn bx--btn--ghost bx--btn--sm bx--snippet-btn--expand" type="button">
+<span class="bx--snippet-btn--text" data-show-more-text="Show more" data-show-less-text="Show less">Show less</span>
+<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" aria-label="Show more icon" class="bx--icon-chevron--down bx--snippet__icon" width="16" height="16" viewBox="0 0 16 16" role="img"><path d="M8 11L3 6l.7-.7L8 9.6l4.3-4.3.7.7z"></path></svg>
+</button>
+</div> 
+    <!--component end--> 
+
+    <h2>Inline</h2>
+    <!--component start-->
+    <!-- 
+  Copyright IBM Corp. 2016, 2018
+
+  This source code is licensed under the Apache-2.0 license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+<p>Here is an example of a text that a user would be reading. In this paragraph would be
+  <button data-copy-btn="" type="button" class="bx--snippet bx--snippet--inline bx--btn--copy" aria-label="Copy code" tabindex="0">
+    <code>inline code</code>
+    <div class="bx--btn--copy__feedback" role="alert" data-feedback="Copied!"></div>
+  </button>
+  that the user could look at and copy in to their code editor.</p>
+    <!--component end--> 
+
+    <h2>Inline (light)</h2>
+    <!--component start-->
+    <!-- 
+  Copyright IBM Corp. 2016, 2018
+
+  This source code is licensed under the Apache-2.0 license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+<p>Here is an example of a text that a user would be reading. In this paragraph would be
+  <button data-copy-btn="" type="button" class="bx--snippet bx--snippet--inline bx--btn--copy bx--snippet--light" aria-label="Copy code" tabindex="0">
+    <code>inline code</code>
+    <div class="bx--btn--copy__feedback" role="alert" data-feedback="Copied!"></div>
+  </button>
+  that the user could look at and copy in to their code editor.</p>
+    <!--component end--> 
+
+  </div></main>
+
+
+<div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
