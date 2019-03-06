@@ -2,19 +2,17 @@
 <!-- saved from url=(0036)http://localhost:8080/dist/home.html -->
 <html lang="en" class="gr__localhost" style="filter: url(&quot;#none&quot;);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>Tabs Accessibility</title>
-  <link rel="stylesheet" href="./Tabs-doc_files/main.css">
-  <script src="./Tabs-doc_files/index.js"></script>
-  <script src="./Tabs-doc_files/carbon-components.min.js"></script>
+  <title>Select Accessibility</title>
+  <link rel="stylesheet" href="./Select-doc_files/main.css">
+  <script src="./Select-doc_files/index.js"></script>
+  <script src="./Select-doc_files/carbon-components.min.js"></script>
 </head>
 
 <body class="bx--body" data-gr-c-s-loaded="true">
   
   <nav data-tabs="" class="bx--tabs" role="navigation">
     <div class="bx--tabs-trigger" tabindex="0">
-      <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1">
-        Accessibility
-      </a>
+      <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
       <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
         <path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path>
       </svg>
@@ -29,37 +27,50 @@
     <div style="padding: 1rem;">
       <div id="tab-panel-1" class="tab-1" role="tabpanel" aria-labelledby="tab-link-1" aria-hidden="false">
         <div class="container">
-          <h3>Tabs - How it Works</h3>
-          <p>[Enter: How ot works] 
-            </p>
+          <h3>Select - How it Works</h3>
+          <p>The Select Carbon Component is a form input field, where a user is submitting data and chooses a single option from a list of options.
+            The label element is used to explicitly associate a form control with a label. A label is attached to a specific 
+            form control through the use of the "for" attribute. The value of the "for" attribute must be the same as the value of the 
+            "id" attribute of the form control. Also note that the "id" attribute may have the same value as the name attribute, but both must be provided, 
+            and the id must be unique in the Web page.
+          </p>
       
         <div class="container">
           <h3>Accessibility Considerations</h3>
           <ul class="bx--list--ordered">
-              <li class="bx--list__item">Tabs should activate automatically when they receive focus 
-                as long as their associated tab panels are displayed without noticeable latency. </li>
-              <li class="bx--list__item">Tabs that are arranged vertically should use the Up and Down Arrow keys to navigate the tab list.</li>
-            </ul>
-          </div>
-          <div class="container">
-            <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
-            <ul class="bx--list--unordered">
-              <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel" class="bx--link">W3C
-                  WAI-ARIA Tab Design Pattern </a> covers the usage of ARIA names, state and
-                  roles, as well as the expected keyboard intractions.</li>
-              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/info_and_relationships.html" class="bx--link">IBM
-                  Accessibility Checklist - Checkpoint 1.3.1 Info and Relationships</a> includes the development techniques to
-                meet this checkpoint.</li>
-                <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/meaningful_sequence.html" class="bx--link">IBM
-                  Accessibility Checklist - Checkpoint 1.3.2 Meaningful Sequence</a> includes the development techniques to
-                meet this checkpoint.</li>
-                <li class="bx--list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships" class="bx--link">WCAG Success Criteria 1.3.1 
-                  </a> - Information and Relationships </li>
-              <li class="bx--list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence" class="bx--link">WCAG Success Criteria 1.3.2 
-                  </a> - Meaningful Sequence </li>
-            </ul>
+            <li class="bx--list__item">Avoid very long option names to facilitate understandability and perceivability.</li>
+            <li class="bx--list__item">Do not use the same word or phrase at the beginning of a set of options.</li>
+            <li class="bx--list__item">Use a unique id for each option.</li>
+            <li class="bx--list__item">If the select field is required include the <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA2.html">aria-required property</a> and indicate that it is a 
+              required field and use the validation message for input errors.</li>
+          </ul>
         </div>
-      
+        <div class="container">
+          <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
+          <ul class="bx--list--unordered">
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/info_and_relationships.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 1.3.1 Information and Relationships</a> includes the development techniques to
+                meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/on_input.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 3.2.2 On Input</a> includes the development techniques to
+              meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/error_id.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 3.3.1 Error Identification</a> includes the development techniques to
+                meet this checkpoint.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/labels_or_instructions.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 3.3.2 Labels or Instructions</a> includes the development techniques to
+              meet this checkpoint.</li>
+
+              <li class="bx--list__item"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic" class="bx--link">WCAG
+                Success Criteria 1.3.1</a> - Info and Relationships</li>
+              <li class="bx--list__item"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic" class="bx--link">WCAG
+                Success Criteria 3.2.2</a> - On Input</li>
+            <li class="bx--list__item"><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification" class="bx--link">WCAG
+                Success Criteria 3.3.1</a> - Error Identification</li>
+                <li class="bx--list__item"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-cues" class="bx--link">WCAG
+                  Success Criteria 3.3.2</a> - Labels or Instructions</li>
+          </ul>
+        </div>
         <div class="container">
             <div class="bx--data-table-v2-container" data-table-v2="">
               <h3 class="bx--data-table-v2-header">Accessibility Testing</h3>
@@ -318,6 +329,7 @@
 
 
   </div></main>
+
 
 
 <div id="colorBlindVisualizationSVGFilterContainer" hidden=""><svg id="colorBlindVisualizationSVGFilter" version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">   <filter id="protanopia">       <fecolormatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>   </filter>   <filter id="deuteranopia">       <fecolormatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="tritanopia">       <fecolormatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter>    <filter id="luminosity">       <fecolormatrix type="matrix" values="0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0.299, 0.587, 0.114, 0, 0, 0, 0, 0, 1, 0" in="SourceGraphic"></fecolormatrix>    </filter> </svg></div></body></html>
