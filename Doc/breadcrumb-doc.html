@@ -37,11 +37,9 @@
           <p>The Breadcrumb Carbon Component provides a way for the user to navigate Web content by providing a group
             of links to the parent Web pages that preceed the current page. The breadcrumb is contained within a
             navigation landmark region. The landmark region contains an ARIA label,
-            aria-label="breadcrumb" to advise users of assistive technologies that they are navigating a breadcrumb.
+            <code>aria-label="breadcrumb"</code> to advise users of assistive technologies that they are navigating a breadcrumb trail.
             CSS is used for the visual separators between each link so they are not represented in the accessibility
-            tree
-            used by screen readers which prevents
-            redunant and at times distracting verbosity.
+            tree used by screen readers which helps to prevent redundancy and at times distracting verbosity.
           </p>
         </div>
         <div class="container">
@@ -50,6 +48,10 @@
             <li class="bx--list__item">If the current page element in the breadcrumb is not a link,
               add the ARIA attribute aria-current="page".
             </li>
+            <li class="bx--list__item">The breadcrumb should remain in the same relative order and location on each web page.
+              </li>
+            <li class="bx--list__item">The link text should be clear, reflect the breadcrumb location accurately and easy to 
+              understand for all users.</li>
           </ul>
         </div>
         <div class="container">
@@ -58,16 +60,16 @@
             <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb" class="bx--link">W3C
                 WAI-ARIA Authoring Practices Breadcrumb Design Pattern</a> covers the usage of ARIA names, state and
               roles.</li>
-            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/link_purpose.html" class="bx--link">IBM
-                Accessibility Checklist - Checkpoint 2.4.4 Link Purpose (In Context)</a> and <a href="https://www.ibm.com/able/guidelines/ci162/consistent_navigation.html"
-                class="bx--link">IBM
-                Accessibility Checklist - Checkpoint 3.2.3 Consistent Navigation</a> includes the development
-              techniques to
-              meet this checkpoint.</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
-                class="bx--link">WCAG Success Criteria 2.4.4</a> - Link Purpose (In Context)</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html"
-                class="bx--link">WCAG Success Criteria 3.2.2</a> - Consistent Navigation</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/link_purpose.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint  2.4.4 Link Purpose (In Context)</a> and 
+                  <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html" class="bx--link">WCAG
+                  Success Criteria 2.4.4</a>.</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/consistent_navigation.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint Checkpoint 3.2.3 Consistent Navigation</a> and 
+                  <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html" class="bx--link">WCAG
+                  Success Criteria 3.2.3</a>.</li>
           </ul>
         </div>
         <div class="container">
@@ -129,7 +131,7 @@
                   <ul class="bx--list--ordered">
                     <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
                       navigation."</li>
-                    <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
+                    <li class="bx--list__item">The Tab key and shift-tab navigate between the links in the breadcrumb.
                       VO announces,
                       "Link Breadcrumb #. You are currently on a link to click this link press
                       Control-Option-Space."
@@ -168,7 +170,7 @@
                   <ul class="bx--list--ordered">
                     <li class="bx--list__item">Tab to the breadcrumb and VO announces, "Breadcrumb 1, breadcrumb
                       navigation."</li>
-                    <li class="bx--list__item">The key and shift-tab navigate between the links in the breadcrumb.
+                    <li class="bx--list__item">The Tab key and shift-tab navigate between the links in the breadcrumb.
                       VO announces,
                       "Link Breadcrumb #. You are currently on a link to click this link press
                       Control-Option-Space."

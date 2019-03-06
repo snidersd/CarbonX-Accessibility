@@ -35,11 +35,11 @@
         <div class="container">
           <h3>Accordion Accessibility - How it Works</h3>
           <p>The Accordion Carbon Component provides a vertically stacked layout for web content. The accordion header
-            is a
-            button that is used to expand and collapse each accordion panel. The Tab key and Shift-Tab keys are used to
-            navigate
-            through each accordion header and the Enter or Space key expand and collapse each accordion panel.
-            WAI-ARIA roles and states are included to ensure the
+            is a button that is used to expand and collapse each accordion panel. Buttons are used 
+            so that the accordions are tab-able by keyboard users and accessible to screen readers. Tab key and Shift-Tab keys are used to
+            navigate through each accordion header and the Enter or Space key expand and collapse each accordion panel.
+            Each accordion button has a unique <code>id</code> associated with it's <code>aria-control</code>.
+            WAI-ARIA roles and states are used to ensure the
             component is accessible to people using assistive technologies. The accordion component is assigned the
             ARIA <code>role="presentation"</code> because it is used to layout web content.
             When an accordion header is collapsed the content is hidden so the ARIA state,
@@ -48,7 +48,7 @@
             is expanded the ARIA state changes to <code>aria-expanded="true"</code> and the accordion panel is
             displayed.
             Each accordion header contains an ARIA label,
-            <code>aria-label="expand/collapse"</code> and arrow icons used in the accordion header include alternative
+            <code>aria-label="expand/collapse"</code>, and arrow icons are used in the accordion header include alternative
             text.
           </p>
         </div>
@@ -63,27 +63,61 @@
               without having to expand every section.</li>
             <li class="bx--list__item">Carbon Components should be used to create the content that displays within each
               accordion panel.</li>
+              <li class="bx--list__item">Avoid keyboard traps when adding components to the accordion panel. For example, the user expands an accordion, 
+                but is unable to tab to the next item.</li>
             <li class="bx--list__item">Although the accordion component passes accessibility testing, content authors
               need to ensure the content that is added to the accordion is accessible. For example, if you add an
-              image to the accordion header or panel you need to
-              include alternative text to pass accessibility testing.
-            </li>
+              image to the accordion header or panel you need to include alternative text to pass accessibility testing.
+            </li> 
           </ul>
         </div>
         <div class="container">
           <h3>Helpful Resources for Creating Customized Accessible Implementations:</h3>
           <ul class="bx--list--unordered">
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/#accordion"
-                class="bx--link">W3C
+            <li class="bx--list__item"><a href="https://www.w3.org/TR/wai-aria-practices/#accordion" class="bx--link">W3C
                 WAI-ARIA Authoring Practices Accordion Design Pattern</a> covers the usage of ARIA names, state and
-              roles, as well as the expected keyboard intractions.</li>
-            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html"
+              roles, as well as the expected keyboard interactions.</li>
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/info_and_relationships.html"
                 class="bx--link">IBM
-                Accessibility Checklist - Checkpoint 4.1.2 Name, Role, Value</a> includes the development techniques to
-              meet this checkpoint.</li>
-            <li class="bx--list__item"><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html"
-                class="bx--link">WCAG
-                Success Criteria 4.1.2</a> - Understanding Name, Role, Value</li>
+                Accessibility Checklist - Checkpoint 1.3.1 Info and Relationships</a> and 
+                <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships" class="bx--link">WCAG
+                Success Criteria 1.3.1</a>.</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/meaningful_sequence.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 1.3.2 Meaningful Sequence</a> and 
+                <a href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence" class="bx--link">WCAG
+                Success Criteria 1.3.2</a>.</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/keyboard.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 2.1.1 Keyboard</a> and 
+                  <a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard" class="bx--link">WCAG
+                  Success Criteria 2.1.1</a>.</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/no_keyboard_trap.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 2.1.2 No Keyboard Trap</a> and 
+                  <a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap" class="bx--link">WCAG
+                  Success Criteria 2.1.2</a>.</li>
+
+              <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/focus_order.html" class="bx--link">IBM
+                  Accessibility Checklist - Checkpoint 2.4.3 Focus Order.</a> and 
+                  <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order" class="bx--link">WCAG
+                  Success Criteria 2.4.3</a>.</li>
+
+            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/headings_and_labels.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 2.4.6 Headings and Labels</a> and 
+                <a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels" class="bx--link">WCAG
+                Success Criteria 2.4.6</a>.</li>
+
+            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/focus_visible.html" class="bx--link">IBM
+                Accessibility Checklist - Checkpoint 2.4.7 Focus Visible</a> and 
+                <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible" class="bx--link">WCAG
+                Success Criteria 2.4.7</a>.</li>
+
+            <li class="bx--list__item"><a href="https://www.ibm.com/able/guidelines/ci162/name_role_value.html"
+              class="bx--link">IBM
+              Accessibility Checklist - Checkpoint 4.1.2 Name, Role, Value</a> and 
+              <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html" class="bx--link">WCAG
+              Success Criteria 4.1.2</a>.</li>
           </ul>
         </div>
         <div class="container">
@@ -143,7 +177,7 @@
                 <td>
                   <li class="bx--list__item">VoiceOver(VO) Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO
+                    <li class="bx--list__item">The Tab key and Shift-Tab navigate between accordion headers. VO
                       announces, Expand/collapse, title, collapsed, button, the button's state
                       (expanded or collapsed), list, 1 item. You are currently on a button...</li>
                     <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the
@@ -186,7 +220,7 @@
                 <td>
                   <li class="bx--list__item">VoiceOver(VO) Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. VO
+                    <li class="bx--list__item">The Tab key and Shift-Tab navigate between accordion headers. VO
                       announces, Expand/collapse, title, collapsed, button, the button's state
                       (expanded or collapsed), group.</li>
                     <li class="bx--list__item">Press Control-Option-Space (or Space) to expand or collapse the
@@ -230,7 +264,7 @@
                 <td>
                   <li class="bx--list__item">JAWS Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. JAWS
+                    <li class="bx--list__item">The Tab key and Shift-Tab navigate between accordion headers. JAWS
                       announces, title, and expand/collapse status.</li>
                     <li class="bx--list__item">Press the Enter or Space key on the title. JAWS announces Expand or
                       Collapsed.</li>
@@ -271,7 +305,7 @@
                 <td>
                   <li class="bx--list__item">NVDA Test:</li>
                   <ul class="bx--list--ordered">
-                    <li class="bx--list__item">The tab key and shift-tab navigate between accordion headers. NVDA
+                    <li class="bx--list__item">The Tab key and Shift-Tab navigate between accordion headers. NVDA
                       announces, title, and expand/collapse status.</li>
                     <li class="bx--list__item">Press the Enter or Space key on the title. NVDA announces Expand or
                       Collapsed.</li>
